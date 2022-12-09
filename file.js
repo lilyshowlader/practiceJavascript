@@ -27,3 +27,20 @@ function calculateAnimals(animals) {
 }
 
 console.log(calculateAnimals(animals))
+
+// this function will return an object with the count of each character within a string 
+function charCount(string) {
+  let count = {}
+  // loop through the string. 
+  for (let i = 0; i < string.length; i++) {
+    // store the value of i in each iteration to a variable
+    let value = string[i]
+    if (count[value]) {
+      count[value]++
+    } else {
+      count[value] = 1
+    }
+  } return count 
+}
+
+console.log(charCount('hello'))
