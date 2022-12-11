@@ -11,6 +11,8 @@ function calculateAnimals(animals) {
     let value = animals[i]
   // storing all the elements in the animals array into a variable called value  
     if (value === 'cat') {
+      // I want to create a key for every new element in the array
+      // if the key already exists, I want to increment the vote by one
       if (count.cat) {
         count.cat = count.cat + 1
       } else {
@@ -41,6 +43,6 @@ function charCount(string) {
       count[value] = 1
     }
   } return count 
-}
 
-console.log(charCount('hello'))
+
+}
