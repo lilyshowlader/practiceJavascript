@@ -312,3 +312,81 @@ function sumNumbers(array) {
 
 
 
+// Which mother has a midwife with four years of experience?
+
+// Reading the question and writing out key words that stick out to me 
+// mother_name, midwife, four years of experience
+
+// Examine the tables
+// Figure out which columns the answer requires
+// newborns.mother_name, midwives.first_name, midwives.years_experience
+
+// Figure out if I need a JOIN or not
+// Figure out if I need a specific condition
+
+// Write out syntax for a JOIN - 
+
+// SELECT newborns.mother_name, midwives.first_name, midwives.years_experience FROM newborns JOIN midwives ON newborns.id = midwives.id WHERE midwives.years_experience = 4;
+
+
+// Which mother has a baby that is 53 inches high?
+
+// Read the question and write out key words that stick out to me
+// mothername, 53 inches high
+
+// Examine the tables
+// we have two tables, one named newborns, one named midwives 
+
+// Figure out which columns the answer requires
+// newborns.mother_name newborns.height //keep in mind condition = 53 inches 
+
+// SELECT mother_name FROM newborns WHERE height = 53.0; 
+
+
+// Prompt:
+
+// - Write a function called sumNumbers that accepts a single array of numbers and returns the sum of the numbers in the array.
+// - If the array is empty, return 0 (zero).
+
+// Examples:
+
+// sumNumbers([10]) //=> 10
+// sumNumbers([5, 10]) //=> 15
+// sumNumbers([2, 10, -5]) //=> 7
+// sumNumbers([]) //=> 0
+
+function sumNumbers(array) {
+  let sum = 0
+  for (let i = 0; i < array.length; i++){
+    // loop through the array, each element should be added together and added to the sum
+    sum += array[i]
+    // same as 
+    sum = sum + array[i]
+  }
+  return sum 
+  // accepts a single array of numbers
+  // returns the sum of the array
+
+}
+
+
+// SELECT CustomerName from Customers WHERE PostalCode = 12209; 
+
+// SELECT CustomerName from Customers WHERE City = 'Berlin';
+
+// When you are selecting a column from a single table you do not need to identify the 
+
+
+
+
+let meow = {
+  key: 1,
+  keytwo: 2,
+  keythree: 5
+}
+
+for (let key in meow) {
+ 
+
+console.log(key)
+} 
